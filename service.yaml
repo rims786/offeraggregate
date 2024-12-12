@@ -1,0 +1,13 @@
+# Defines the service configuration to expose the application.
+apiVersion: v1
+kind: Service
+metadata:
+  name: offeraggregation-service
+spec:
+  selector:
+    app: offeraggregation
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: LoadBalancer

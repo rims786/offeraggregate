@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: offer-aggregation
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: offer-aggregation
+  template:
+    metadata:
+      labels:
+        app: offer-aggregation
+    spec:
+      containers:
+        - name: offer-aggregation
+          image: offer-aggregation:latest
+          ports:
+            - containerPort: 8080

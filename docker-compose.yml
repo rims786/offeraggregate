@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  offer-aggregation:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: offerdb
+    ports:
+      - "3306:3306"
