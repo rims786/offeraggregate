@@ -28,11 +28,9 @@ The application processes offers from both CSV files and streams.
 2. Build and run the application with a single command:
    mvn clean install && mvn spring-boot:run
  
-3. TODO: (Future)
-   - GitHub Repository: Clone the repository:https://github.com/rims786/<future-project>
-   	- (Currently not applicable due to the assignment requirements)
+3. Git
+   - GitHub Repository: Clone the repository:https://github.com/rims786/offeraggregat
    - Deploy application using Docker:
-   	- (Currently not applicable due to the assignment requirements)
        - docker-compose up --build
        - docker-compose ps
 
